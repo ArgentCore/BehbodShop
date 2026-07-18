@@ -1,0 +1,20 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 400 300" role="img" aria-label="جاکلیدی چرمی">
+  <defs>
+    <linearGradient id="bgK" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0%" stop-color="#f4ead9"/>
+      <stop offset="100%" stop-color="#e6d2ac"/>
+    </linearGradient>
+    <linearGradient id="leatherK" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0%" stop-color="#8a4f1f"/>
+      <stop offset="100%" stop-color="#5a2d0c"/>
+    </linearGradient>
+  </defs>
+  <rect width="400" height="300" fill="url(#bgK)"/>
+  <g transform="translate(200,140)">
+    <circle cx="0" cy="-55" r="26" fill="none" stroke="#A67C00" stroke-width="8"/>
+    <rect x="-38" y="-10" width="76" height="110" rx="14" fill="url(#leatherK)"/>
+    <circle cx="0" cy="10" r="7" fill="#3d1e08"/>
+    <rect x="-24" y="30" width="48" height="6" rx="3" fill="#e9d8c3" opacity="0.5"/>
+    <rect x="-24" y="46" width="48" height="6" rx="3" fill="#e9d8c3" opacity="0.5"/>
+  </g>
+</svg>

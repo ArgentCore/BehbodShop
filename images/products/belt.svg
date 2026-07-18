@@ -1,0 +1,22 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 400 300" role="img" aria-label="کمربند چرمی مردانه">
+  <defs>
+    <linearGradient id="bgB" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0%" stop-color="#f2e6d1"/>
+      <stop offset="100%" stop-color="#e2cc9e"/>
+    </linearGradient>
+    <linearGradient id="leatherB" x1="0" y1="0" x2="1" y2="0">
+      <stop offset="0%" stop-color="#5a2d0c"/>
+      <stop offset="100%" stop-color="#7a4419"/>
+    </linearGradient>
+  </defs>
+  <rect width="400" height="300" fill="url(#bgB)"/>
+  <g transform="translate(200,150) rotate(-8)">
+    <rect x="-150" y="-28" width="300" height="56" rx="8" fill="url(#leatherB)"/>
+    <rect x="-150" y="-28" width="300" height="56" rx="8" fill="none" stroke="#e9d8c3" stroke-width="1.5" stroke-dasharray="6 5" opacity="0.5"/>
+    <circle cx="-60" cy="0" r="4.5" fill="#3d1e08" opacity="0.6"/>
+    <circle cx="-40" cy="0" r="4.5" fill="#3d1e08" opacity="0.6"/>
+    <circle cx="-20" cy="0" r="4.5" fill="#3d1e08" opacity="0.6"/>
+    <rect x="80" y="-40" width="70" height="80" rx="10" fill="#A67C00"/>
+    <rect x="98" y="-22" width="34" height="44" rx="6" fill="none" stroke="#5a2d0c" stroke-width="4"/>
+  </g>
+</svg>

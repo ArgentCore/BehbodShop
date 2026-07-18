@@ -1,0 +1,20 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 400 300" role="img" aria-label="کیف دستی چرمی زنانه">
+  <defs>
+    <linearGradient id="bgH" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0%" stop-color="#f4ead9"/>
+      <stop offset="100%" stop-color="#e6d2ac"/>
+    </linearGradient>
+    <linearGradient id="leatherH" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0%" stop-color="#8a4f1f"/>
+      <stop offset="100%" stop-color="#5a2d0c"/>
+    </linearGradient>
+  </defs>
+  <rect width="400" height="300" fill="url(#bgH)"/>
+  <g transform="translate(200,160)">
+    <path d="M -95 60 L -80 -30 Q -60 -55 0 -55 Q 60 -55 80 -30 L 95 60 Z" fill="url(#leatherH)"/>
+    <path d="M -50 -55 Q -50 -95 0 -95 Q 50 -95 50 -55" fill="none" stroke="#3d1e08" stroke-width="10" stroke-linecap="round"/>
+    <rect x="-95" y="-6" width="190" height="6" fill="#3d1e08" opacity="0.4"/>
+    <rect x="-22" y="-25" width="44" height="26" rx="6" fill="#A67C00"/>
+    <path d="M -80 -30 Q -60 -50 0 -50 Q 60 -50 80 -30" fill="none" stroke="#e9d8c3" stroke-width="1.5" stroke-dasharray="5 5" opacity="0.6"/>
+  </g>
+</svg>

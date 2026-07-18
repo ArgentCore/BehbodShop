@@ -1,0 +1,447 @@
+<!DOCTYPE html>
+<html lang="fa" dir="rtl">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>چرم بهبد - محصولات چرمی دست‌دوز ایرانی</title>
+    <meta name="description" content="محصولات چرمی دست‌دوز ایرانی با کیفیت تضمینی">
+    <meta name="theme-color" content="#5a2d0c">
+    <meta name="author" content="چرم بهبد">
+
+    <!-- Open Graph -->
+    <meta property="og:type" content="website">
+    <meta property="og:title" content="چرم بهبد - محصولات چرمی دست‌دوز ایرانی">
+    <meta property="og:description" content="محصولات چرمی دست‌دوز با بهترین کیفیت و طراحی منحصربه‌فرد از کارگاه‌های سنتی ایران">
+    <meta property="og:image" content="images/logo.png">
+    <meta property="og:locale" content="fa_IR">
+
+    <link rel="manifest" href="manifest.json">
+    <link rel="icon" type="image/png" sizes="32x32" href="images/favicon-32.png">
+    <link rel="apple-touch-icon" sizes="180x180" href="images/apple-touch-icon.png">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link href="https://fonts.googleapis.com/css2?family=Vazirmatn:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
+    <link href="https://cdn.jsdelivr.net/npm/remixicon@3.5.0/fonts/remixicon.css" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header>
+        <a href="#" class="logo">
+            <img src="images/logo.png" alt="چرم بهبد" loading="lazy">
+            <span>چرم بهبد</span>
+        </a>
+        <ul class="navbar">
+            <li><a href="#home" class="active">خانه</a></li>
+            <li class="nav-item has-submenu">
+                <a href="#products" class="nav-link">محصولات</a>
+                <ul class="submenu">
+                    <li><a href="#products" data-filter="wallet">کیف پول</a></li>
+                    <li><a href="#products" data-filter="handbag">کیف دستی</a></li>
+                    <li><a href="#products" data-filter="belt">کمربند</a></li>
+                    <li><a href="#products" data-filter="accessory">اکسسوری</a></li>
+                </ul>
+            </li>
+            <li><a href="#about">درباره ما</a></li>
+            <li><a href="#testimonials">نظرات</a></li>
+            <li><a href="#contact">تماس</a></li>
+        </ul>
+        <div class="header-center">
+            <div class="search-wrapper">
+                <input type="search" id="live-search" placeholder="جستجو در محصولات...">
+                <button id="search-clear" style="display:none;"><i class="ri-close-line"></i></button>
+            </div>
+        </div>
+        <div class="header-actions">
+            <button id="search-toggle" class="search-btn"><i class="ri-search-line"></i></button>
+            <button id="theme-toggle" class="theme-toggle"><i class="ri-moon-line"></i></button>
+            <a href="#" class="cart-btn" id="cart-open">
+                <i class="ri-shopping-cart-line"></i>
+                <span>0</span>
+            </a>
+            <a href="#" class="sign-in">ورود</a>
+        </div>
+        <div id="menu-icon" class="ri-menu-line"></div>
+    </header>
+
+    <section class="hero" id="home">
+        <div class="hero-content">
+            <h1 class="hero-title">
+                <span class="animate-blur">هنر</span>
+                <span class="animate-blur">دستان</span>
+                <span class="animate-blur">ایرانی،</span>
+                <span class="animate-blur">زیبایی</span>
+                <span class="animate-blur">ماندگار</span>
+            </h1>
+            <p class="hero-description">محصولات چرمی دست‌دوز با بهترین کیفیت و طراحی منحصربه‌فرد از کارگاه‌های سنتی ایران</p>
+            <div class="hero-buttons">
+                <a href="#products" class="btn btn-primary">مشاهده محصولات</a>
+                <a href="#about" class="btn btn-secondary">درباره ما</a>
+            </div>
+        </div>
+        <div class="hero-image">
+            <img src="images/hero-illustration.svg" alt="محصولات چرم دست‌دوز بهبد" loading="lazy">
+        </div>
+    </section>
+
+    <section class="features">
+        <div class="feature">
+            <i class="ri-truck-line"></i>
+            <h3>ارسال رایگان</h3>
+            <p>برای خریدهای بالای ۳ میلیون تومان</p>
+        </div>
+        <div class="feature">
+            <i class="ri-shield-check-line"></i>
+            <h3>ضمانت کیفیت</h3>
+            <p>۷ روز ضمانت بازگشت کالا</p>
+        </div>
+        <div class="feature">
+            <i class="ri-customer-service-line"></i>
+            <h3>پشتیبانی ۲۴/۷</h3>
+            <p>پاسخگویی دائمی به مشتریان</p>
+        </div>
+        <div class="feature">
+            <i class="ri-hand-heart-line"></i>
+            <h3>تولید دستی</h3>
+            <p>ساخته شده با عشق و هنر ایرانی</p>
+        </div>
+    </section>
+
+    <section class="products" id="products">
+        <div class="section-header">
+            <span class="section-subtitle">محصولات ویژه</span>
+            <h2 class="section-title">محصولات چرمی دست‌دوز</h2>
+            <p>انتخابی از بهترین محصولات کارگاه‌های چرم‌سازی ایران</p>
+        </div>
+        <div class="product-filters">
+            <button class="filter-btn active" data-filter="all">همه</button>
+            <button class="filter-btn" data-filter="wallet">کیف پول</button>
+            <button class="filter-btn" data-filter="handbag">کیف دستی</button>
+            <button class="filter-btn" data-filter="belt">کمربند</button>
+            <button class="filter-btn" data-filter="accessory">اکسسوری</button>
+        </div>
+        <div class="products-grid">
+            <div class="product-card" data-category="wallet" data-id="1" data-title="کیف پول چرمی دست‌دوز" data-price="2850000" data-old="3200000" data-desc="کیف پول چرمی با طراحی سنتی">
+                <div class="product-image">
+                    <img src="images/products/wallet.svg" alt="کیف پول" loading="lazy">
+                    <div class="product-overlay">
+                        <button class="quick-view" title="مشاهده سریع"><i class="ri-eye-line"></i></button>
+                        <button class="add-to-cart" title="افزودن به سبد"><i class="ri-shopping-cart-line"></i></button>
+                        <button class="wishlist" data-id="1" title="علاقه‌مندی"><i class="ri-heart-line"></i></button>
+                    </div>
+                </div>
+                <div class="product-info">
+                    <h3>کیف پول چرمی دست‌دوز</h3>
+                    <div class="product-price">
+                        <span class="price" content="2850000">۲,۸۵۰,۰۰۰ تومان</span>
+                        <span class="old-price">۳,۲۰۰,۰۰۰ تومان</span>
+                    </div>
+                    <div class="product-rating">
+                        <i class="ri-star-fill"></i><i class="ri-star-fill"></i><i class="ri-star-fill"></i><i class="ri-star-fill"></i><i class="ri-star-line"></i>
+                        <span>(۱۲)</span>
+                    </div>
+                </div>
+            </div>
+            
+            <div class="product-card" data-category="handbag" data-id="2" data-title="کیف دستی چرمی زنانه" data-price="5200000" data-old="5800000" data-desc="کیف دستی زنانه با چرم طبیعی">
+                <div class="product-image">
+                    <img src="images/products/handbag.svg" alt="کیف دستی" loading="lazy">
+                    <div class="product-overlay">
+                        <button class="quick-view" title="مشاهده سریع"><i class="ri-eye-line"></i></button>
+                        <button class="add-to-cart" title="افزودن به سبد"><i class="ri-shopping-cart-line"></i></button>
+                        <button class="wishlist" data-id="2" title="علاقه‌مندی"><i class="ri-heart-line"></i></button>
+                    </div>
+                </div>
+                <div class="product-info">
+                    <h3>کیف دستی چرمی زنانه</h3>
+                    <div class="product-price">
+                        <span class="price" content="5200000">۵,۲۰۰,۰۰۰ تومان</span>
+                        <span class="old-price">۵,۸۰۰,۰۰۰ تومان</span>
+                    </div>
+                    <div class="product-rating">
+                        <i class="ri-star-fill"></i><i class="ri-star-fill"></i><i class="ri-star-fill"></i><i class="ri-star-fill"></i><i class="ri-star-line"></i>
+                        <span>(۲۳)</span>
+                    </div>
+                </div>
+            </div>
+            <div class="product-card" data-category="belt" data-id="3" data-title="کمربند چرمی مردانه" data-price="1850000" data-old="2200000" data-desc="کمربند مردانه دست‌دوز">
+                <div class="product-image">
+                    <img src="images/products/belt.svg" alt="کمربند" loading="lazy">
+                    <div class="product-overlay">
+                        <button class="quick-view" title="مشاهده سریع"><i class="ri-eye-line"></i></button>
+                        <button class="add-to-cart" title="افزودن به سبد"><i class="ri-shopping-cart-line"></i></button>
+                        <button class="wishlist" data-id="3" title="علاقه‌مندی"><i class="ri-heart-line"></i></button>
+                    </div>
+                </div>
+                <div class="product-info">
+                    <h3>کمربند چرمی مردانه</h3>
+                    <div class="product-price">
+                        <span class="price" content="1850000">۱,۸۵۰,۰۰۰ تومان</span>
+                        <span class="old-price">۲,۲۰۰,۰۰۰ تومان</span>
+                    </div>
+                    <div class="product-rating">
+                        <i class="ri-star-fill"></i><i class="ri-star-fill"></i><i class="ri-star-fill"></i><i class="ri-star-fill"></i><i class="ri-star-line"></i>
+                        <span>(۸)</span>
+                    </div>
+                </div>
+            </div>
+            <div class="product-card" data-category="accessory" data-id="4" data-title="جاکلیدی چرمی" data-price="450000" data-old="600000" data-desc="جاکلیدی چرمی کوچک">
+                <div class="product-image">
+                    <img src="images/products/keychain.svg" alt="جاکلیدی" loading="lazy">
+
+                    <div class="product-overlay">
+                        <button class="quick-view" title="مشاهده سریع"><i class="ri-eye-line"></i></button>
+                        <button class="add-to-cart" title="افزودن به سبد"><i class="ri-shopping-cart-line"></i></button>
+                        <button class="wishlist" data-id="4" title="علاقه‌مندی"><i class="ri-heart-line"></i></button>
+                    </div>
+                </div>
+                <div class="product-info">
+                    <h3>جاکلیدی چرمی</h3>
+                    <div class="product-price">
+                        <span class="price" content="450000">۴۵۰,۰۰۰ تومان</span>
+                        <span class="old-price">۶۰۰,۰۰۰ تومان</span>
+                    </div>
+                    <div class="product-rating">
+                        <i class="ri-star-fill"></i><i class="ri-star-fill"></i><i class="ri-star-fill"></i><i class="ri-star-fill"></i><i class="ri-star-line"></i>
+                        <span>(۱۵)</span>
+                    </div>
+                </div>
+            </div>
+            <div class="product-card" data-category="handbag" data-id="5" data-title="کیف اداری چرم مدل آرکو" data-price="13550000" data-old="15000000" data-desc="کیف اداری لوکس">
+                <div class="product-image">
+                    <img src="images/products/briefcase.svg" alt="کیف اداری" loading="lazy">
+                    <div class="product-overlay">
+                        <button class="quick-view" title="مشاهده سریع"><i class="ri-eye-line"></i></button>
+                        <button class="add-to-cart" title="افزودن به سبد"><i class="ri-shopping-cart-line"></i></button>
+                        <button class="wishlist" data-id="5" title="علاقه‌مندی"><i class="ri-heart-line"></i></button>
+                    </div>
+                </div>
+                <div class="product-info">
+                    <h3>کیف اداری چرم مدل آرکو</h3>
+                    <div class="product-price">
+                        <span class="price" content="13550000">۱۳,۵۵۰,۰۰۰ تومان</span>
+                        <span class="old-price">۱۵,۰۰۰,۰۰۰ تومان</span>
+                    </div>
+                    <div class="product-rating">
+                        <i class="ri-star-fill"></i><i class="ri-star-fill"></i><i class="ri-star-fill"></i><i class="ri-star-fill"></i><i class="ri-star-line"></i>
+                        <span>(۱۸)</span>
+                    </div>
+                </div>
+            </div>
+            <div class="product-card" data-category="handbag" data-id="6" data-title="کیف دوشی چرمی مدل آریا" data-price="3500000" data-old="4200000" data-desc="کیف دوشی راحت">
+                <div class="product-image">
+                    <img src="images/products/shoulderbag.svg" alt="کیف دوشی" loading="lazy">
+                    <div class="product-overlay">
+                        <button class="quick-view" title="مشاهده سریع"><i class="ri-eye-line"></i></button>
+                        <button class="add-to-cart" title="افزودن به سبد"><i class="ri-shopping-cart-line"></i></button>
+                        <button class="wishlist" data-id="6" title="علاقه‌مندی"><i class="ri-heart-line"></i></button>
+                    </div>
+                </div>
+                <div class="product-info">
+                    <h3>کیف دوشی چرمی مدل آریا</h3>
+                    <div class="product-price">
+                        <span class="price" content="3500000">۳,۵۰۰,۰۰۰ تومان</span>
+                        <span class="old-price">۴,۲۰۰,۰۰۰ تومان</span>
+                    </div>
+                    <div class="product-rating">
+                        <i class="ri-star-fill"></i><i class="ri-star-fill"></i><i class="ri-star-fill"></i><i class="ri-star-line"></i><i class="ri-star-line"></i>
+                        <span>(۹)</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="loader">
+            <i class="ri-loader-4-line"></i> در حال بارگذاری...
+        </div>
+    </section>
+
+    <section class="about" id="about">
+        <div class="section-header">
+            <span class="section-subtitle">درباره ما</span>
+            <h2 class="section-title">چرم بهبد</h2>
+            <p>جایی که هنر چرم با سنت ایرانی جان می‌گیرد</p>
+        </div>
+        <div class="about-content">
+            <div class="about-image">
+                <img src="images/about-illustration.svg" alt="کارگاه چرم‌دوزی سنتی بهبد" loading="lazy">
+            </div>
+            <div class="about-text">
+                <p>در چرم بهبد، ما بیش از یک فروشگاه آنلاین هستیم؛ ما روایت‌گر داستان‌هایی از عشق، هنر و اصالتیم که با هر بخیه روی چرم طبیعی شکل می‌گیرن.</p>
+                <div class="about-features">
+                    <div class="feature-item">
+                        <i class="ri-leaf-line"></i>
+                        <h4>چرم 100% طبیعی</h4>
+                        <p>بهترین چرم‌های طبیعی با دوام و اصالت تضمینی</p>
+                    </div>
+                    <div class="feature-item">
+                        <i class="ri-pencil-line"></i>
+                        <h4>طراحی منحصربه‌فرد</h4>
+                        <p>الهام‌گرفته از هنر اقوام ایرانی با سبک مدرن</p>
+                    </div>
+                    <div class="feature-item">
+                        <i class="ri-needle-line"></i>
+                        <h4>کیفیت دست‌دوز</h4>
+                        <p>هر بخیه نتیجه ساعت‌ها تلاش هنرمندان ما</p>
+                    </div>
+                </div>
+                <a href="#" class="btn btn-primary">بیشتر درباره ما</a>
+            </div>
+        </div>
+    </section>
+
+    <section class="testimonials" id="testimonials">
+        <div class="section-header">
+            <span class="section-subtitle">نظرات مشتریان</span>
+            <h2 class="section-title">مشتریان ما چه می‌گویند؟</h2>
+        </div>
+        <div class="testimonials-container">
+            <div class="testimonial-card">
+                <div class="testimonial-content">
+                    <div class="stars">
+                        <i class="ri-star-fill"></i><i class="ri-star-fill"></i><i class="ri-star-fill"></i><i class="ri-star-fill"></i><i class="ri-star-fill"></i>
+                    </div>
+                    <p>"کیف پولی که سفارش دادم خیلی باکیفیت و خوش‌دوخت بود. واقعا حس دست‌ساز بودن رو منتقل می‌کنه و از خریدم کاملا راضی هستم."</p>
+                </div>
+                <div class="testimonial-author">
+                    <img src="images/avatar-1.svg" alt="مریم رضایی" loading="lazy">
+                    <div>
+                        <h4>مریم رضایی</h4>
+                        <span>مشتری ثابت</span>
+                    </div>
+                </div>
+            </div>
+            <div class="testimonial-card">
+                <div class="testimonial-content">
+                    <div class="stars">
+                        <i class="ri-star-fill"></i><i class="ri-star-fill"></i><i class="ri-star-fill"></i><i class="ri-star-fill"></i><i class="ri-star-fill"></i>
+                    </div>
+                    <p>"کمربند چرمی گرفتم، واقعا عالیه. هم جنسش فوق‌العاده‌ست هم بسته‌بندی خیلی شیک بود. پیشنهاد می‌کنم!"</p>
+                </div>
+                <div class="testimonial-author">
+                    <img src="images/avatar-2.svg" alt="علی کریمی" loading="lazy">
+                    <div>
+                        <h4>علی کریمی</h4>
+                        <span>مشتری جدید</span>
+                    </div>
+                </div>
+            </div>
+            <div class="testimonial-card">
+                <div class="testimonial-content">
+                    <div class="stars">
+                        <i class="ri-star-fill"></i><i class="ri-star-fill"></i><i class="ri-star-fill"></i><i class="ri-star-fill"></i><i class="ri-star-line"></i>
+                    </div>
+                    <p>"محصولات چرم بهبد هم خاص هستن هم شیک. از خرید کیف دستی خیلی راضی‌ام. فقط ای کاش تنوع رنگی بیشتری داشت."</p>
+                </div>
+                <div class="testimonial-author">
+                    <img src="images/avatar-3.svg" alt="زهرا محمدی" loading="lazy">
+                    <div>
+                        <h4>زهرا محمدی</h4>
+                        <span>طراح داخلی</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="newsletter" id="newsletter">
+        <div class="newsletter-content">
+            <h2>عضویت در خبرنامه</h2>
+            <p>از جدیدترین محصولات و تخفیف‌های ویژه با خبر شوید</p>
+            <form class="newsletter-form">
+                <input type="email" placeholder="ایمیل خود را وارد کنید" required>
+                <button type="submit">عضویت</button>
+            </form>
+        </div>
+    </section>
+
+    <footer class="footer" id="contact">
+        <div class="footer-content">
+            <div class="footer-section">
+                <div class="footer-logo">
+                    <img src="images/logo.png" alt="چرم بهبد" loading="lazy">
+                    <span>چرم بهبد</span>
+                </div>
+                <p>فروشگاه تخصصی محصولات چرمی دست‌دوز ایرانی با کیفیت و اصالت تضمینی</p>
+                <div class="social-links">
+                    <a href="#"><i class="ri-instagram-line"></i></a>
+                    <a href="#"><i class="ri-telegram-line"></i></a>
+                    <a href="#"><i class="ri-twitter-line"></i></a>
+                </div>
+            </div>
+            <div class="footer-section">
+                <h3>دسترسی سریع</h3>
+                <ul>
+                    <li><a href="#home">خانه</a></li>
+                    <li><a href="#products">محصولات</a></li>
+                    <li><a href="#about">درباره ما</a></li>
+                    <li><a href="#testimonials">نظرات</a></li>
+                </ul>
+            </div>
+            <div class="footer-section">
+                <h3>پشتیبانی</h3>
+                <ul>
+                    <li><a href="#">سوالات متداول</a></li>
+                    <li><a href="#">شرایط بازگشت</a></li>
+                    <li><a href="#">حریم خصوصی</a></li>
+                    <li><a href="#">قوانین سایت</a></li>
+                </ul>
+            </div>
+            <div class="footer-section">
+                <h3>تماس با ما</h3>
+                <div class="contact-info">
+                    <p><i class="ri-phone-line"></i> ۰۲۱-۸۸۸۸-۱۲۳۴</p>
+                    <p><i class="ri-mail-line"></i> info@behbodleather.com</p>
+                    <p><i class="ri-map-pin-line"></i> تهران، خیابان ولیعصر</p>
+                </div>
+            </div>
+        </div>
+        <div class="footer-bottom">
+            <p>&copy; ۱۴۰۴ - تمامی حقوق برای <span>چرم بهبد</span> محفوظ است.</p>
+        </div>
+    </footer>
+
+    <div class="overlay" id="overlay" aria-hidden="true"></div>
+    <div class="cart-drawer" id="cart-drawer" aria-hidden="true">
+        <div class="cart-header">
+            <h3>سبد خرید</h3>
+            <button id="cart-close" class="ri-close-line"></button>
+        </div>
+        <div class="cart-body">
+            <ul id="cart-items-list" class="cart-items"></ul>
+            <div id="cart-empty" class="cart-empty">سبد خرید شما خالی است.</div>
+        </div>
+        <div class="cart-footer">
+            <div class="cart-total" id="cart-total">جمع کل: ۰ تومان</div>
+            <div class="cart-actions">
+                <button id="clear-cart" class="btn btn-outline">خالی کردن سبد</button>
+                <button id="checkout" class="btn btn-primary">تسویه و پرداخت</button>
+            </div>
+        </div>
+    </div>
+
+    <div class="modal" id="quickview-modal" aria-hidden="true">
+        <div class="modal-content">
+            <button class="modal-close ri-close-line"></button>
+            <div class="modal-body">
+                <div class="modal-image">
+                    <img src="" alt="">
+                </div>
+                <div class="modal-details">
+                    <h3 class="modal-title"></h3>
+                    <p class="modal-desc"></p>
+                    <div class="modal-price">
+                        <span class="modal-price-old"></span>
+                        <span class="modal-price-now"></span>
+                    </div>
+                    <div class="modal-actions">
+                        <label>تعداد: <input type="number" class="modal-qty" value="1" min="1"></label>
+                        <button class="btn btn-primary modal-add">افزودن به سبد</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <script src="https://unpkg.com/scrollreveal"></script>
+    <script src="main.js" defer></script>
+</body>
+</html>

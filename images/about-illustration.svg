@@ -1,0 +1,37 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 600 460" role="img" aria-label="کارگاه چرم‌دوزی سنتی بهبد">
+  <defs>
+    <linearGradient id="aboutBg" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0%" stop-color="#f3e7d3"/>
+      <stop offset="100%" stop-color="#dfc99a"/>
+    </linearGradient>
+    <linearGradient id="aboutLeather" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0%" stop-color="#7a4419"/>
+      <stop offset="100%" stop-color="#4a2409"/>
+    </linearGradient>
+  </defs>
+  <rect width="600" height="460" rx="20" fill="url(#aboutBg)"/>
+
+  <!-- workbench -->
+  <rect x="60" y="330" width="480" height="20" rx="6" fill="#43220a"/>
+  <rect x="90" y="350" width="20" height="70" fill="#3d1e08"/>
+  <rect x="490" y="350" width="20" height="70" fill="#3d1e08"/>
+
+  <!-- leather hide on bench -->
+  <path d="M 150 330 Q 130 250 200 220 Q 280 190 360 230 Q 430 260 400 330 Z" fill="url(#aboutLeather)"/>
+  <path d="M 150 330 Q 130 250 200 220 Q 280 190 360 230 Q 430 260 400 330 Z" fill="none" stroke="#e9d8c3" stroke-width="2" stroke-dasharray="6 6" opacity="0.5"/>
+
+  <!-- needle and thread -->
+  <line x1="230" y1="260" x2="330" y2="300" stroke="#A67C00" stroke-width="3" stroke-dasharray="4 6"/>
+  <circle cx="330" cy="300" r="5" fill="#5a2d0c"/>
+
+  <!-- tools -->
+  <rect x="440" y="300" width="70" height="10" rx="5" fill="#5a2d0c" transform="rotate(20 475 305)"/>
+  <circle cx="460" cy="290" r="8" fill="#A67C00"/>
+
+  <!-- thread spool -->
+  <g transform="translate(140,280)">
+    <ellipse cx="0" cy="0" rx="18" ry="26" fill="#A67C00"/>
+    <ellipse cx="0" cy="-26" rx="18" ry="6" fill="#8a5f00"/>
+    <ellipse cx="0" cy="26" rx="18" ry="6" fill="#8a5f00"/>
+  </g>
+</svg>

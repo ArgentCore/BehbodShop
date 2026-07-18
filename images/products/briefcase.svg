@@ -1,0 +1,20 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 400 300" role="img" aria-label="کیف اداری چرم مدل آرکو">
+  <defs>
+    <linearGradient id="bgBr" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0%" stop-color="#f2e6d1"/>
+      <stop offset="100%" stop-color="#e2cc9e"/>
+    </linearGradient>
+    <linearGradient id="leatherBr" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0%" stop-color="#6b3a15"/>
+      <stop offset="100%" stop-color="#4a2409"/>
+    </linearGradient>
+  </defs>
+  <rect width="400" height="300" fill="url(#bgBr)"/>
+  <g transform="translate(200,160)">
+    <path d="M -30 -70 h 60 a10 10 0 0 1 10 10 v10 h -80 v-10 a10 10 0 0 1 10 -10 Z" fill="none" stroke="#3d1e08" stroke-width="8"/>
+    <rect x="-110" y="-50" width="220" height="110" rx="10" fill="url(#leatherBr)"/>
+    <rect x="-110" y="-50" width="220" height="110" rx="10" fill="none" stroke="#e9d8c3" stroke-width="1.5" stroke-dasharray="6 5" opacity="0.5"/>
+    <rect x="-20" y="-8" width="40" height="26" rx="4" fill="#A67C00"/>
+    <rect x="-110" y="-2" width="220" height="4" fill="#2a1305" opacity="0.5"/>
+  </g>
+</svg>

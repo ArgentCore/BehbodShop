@@ -1,0 +1,24 @@
+{
+    "name": "چرم بهبد",
+    "short_name": "بهبد",
+    "start_url": "./index.html",
+    "scope": "./",
+    "display": "standalone",
+    "background_color": "#f8f8f8",
+    "theme_color": "#5a2d0c",
+    "icons": [
+        {
+            "src": "images/icon-192.png",
+            "sizes": "192x192",
+            "type": "image/png"
+        },
+        {
+            "src": "images/icon-512.png",
+            "sizes": "512x512",
+            "type": "image/png"
+        }
+    ],
+    "description": "فروشگاه تخصصی محصولات چرمی دست‌دوز ایرانی با کیفیت تضمینی",
+    "lang": "fa",
+    "dir": "rtl"
+}
