@@ -519,9 +519,35 @@ function typewriter(el, text, speed = 100) {
     type();
 }
 
-// Parallax ساده
 window.addEventListener('scroll', () => {
     const scrolled = window.pageYOffset;
     const heroImg = document.querySelector('.hero-image img');
     if (heroImg) heroImg.style.transform = `translateY(${scrolled * 0.5}px)`;
 });
+
+
+const cursorGlow = document.querySelector(".cursor-glow");
+
+let mouseX = window.innerWidth / 2;
+let mouseY = window.innerHeight / 2;
+
+let glowX = mouseX;
+let glowY = mouseY;
+
+document.addEventListener("mousemove", e => {
+    mouseX = e.clientX;
+    mouseY = e.clientY;
+});
+
+function animateGlow(){
+
+    glowX += (mouseX - glowX) * 0.22;
+    glowY += (mouseY - glowY) * 0.22;
+
+    cursorGlow.style.left = glowX + "px";
+    cursorGlow.style.top = glowY + "px";
+
+    requestAnimationFrame(animateGlow);
+}
+
+animateGlow();
