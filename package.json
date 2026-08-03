@@ -1,0 +1,17 @@
+{
+  "name": "behbodshop",
+  "version": "0.1.0",
+  "private": true,
+  "description": "Behbod Leather - full-stack e-commerce platform for handcrafted Persian leather goods",
+  "workspaces": [
+    "apps/*"
+  ],
+  "scripts": {
+    "dev:api": "npm run start:dev --workspace=apps/api",
+    "dev:web": "npm run dev --workspace=apps/web"
+  },
+  "engines": {
+    "node": ">=20.0.0"
+  },
+  "license": "MIT"
+}
