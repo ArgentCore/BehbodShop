@@ -9,6 +9,15 @@ datasource db {
   url      = env("DATABASE_URL")
 }
 
+model Category {
+  id       String    @id @default(uuid())
+  slug     String    @unique
+  name     String
+  products Product[]
+
+  @@map("categories")
+}
+
 model Product {
   id          String   @id @default(uuid())
   slug        String   @unique
@@ -17,8 +26,11 @@ model Product {
   priceToman  Int
   stock       Int      @default(0)
   isActive    Boolean  @default(true)
+  categoryId  String
+  category    Category @relation(fields: [categoryId], references: [id])
   createdAt   DateTime @default(now())
   updatedAt   DateTime @updatedAt
 
+  @@index([categoryId])
   @@map("products")
 }
