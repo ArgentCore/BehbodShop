@@ -1,14 +1,18 @@
 import { BadRequestException, ConflictException, Injectable } from '@nestjs/common';
 import { PrismaService } from '../prisma/prisma.service';
 import { CreateProductDto } from './dto/create-product.dto';
+import { FindProductsDto } from './dto/find-products.dto';
 
 @Injectable()
 export class ProductsService {
   constructor(private readonly prisma: PrismaService) {}
 
-  findAll() {
+  findAll(query: FindProductsDto) {
     return this.prisma.product.findMany({
-      where: { isActive: true },
+      where: {
+        isActive: true,
+        ...(query.category ? { category: { slug: query.category } } : {}),
+      },
       orderBy: { createdAt: 'desc' },
       include: { category: true },
     });
