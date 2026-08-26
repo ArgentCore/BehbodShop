@@ -1,6 +1,6 @@
 # Changelog
 
-## [Unreleased] - Phase 2 (Auth, Domain Models & Cart)
+## [Unreleased] - Phase 2 (Auth, Domain Models, Cart & Orders)
 
 ### Added
 - Category model with one-to-many relation to Product
@@ -16,6 +16,9 @@
 - Cart and CartItem models with one-to-one (user-cart) and one-to-many (cart-items) relations
 - GET /cart, POST /cart/items, DELETE /cart/items/:productId (all protected)
 - Idempotent add-to-cart: adding an existing product increases quantity instead of duplicating rows
+- Order and OrderItem models with price/title snapshot at purchase time
+- POST /orders - transactional checkout: creates order from cart, clears cart, all-or-nothing
+- GET /orders - order history for the logged-in user
 
 ### Endpoints
 - GET /health
@@ -29,6 +32,8 @@
 - GET /cart (protected)
 - POST /cart/items (protected)
 - DELETE /cart/items/:productId (protected)
+- POST /orders (protected)
+- GET /orders (protected)
 
 ### Verified
 - Signup rejects duplicate emails (ConflictException)
@@ -39,4 +44,7 @@
 - Cart auto-creates on first access
 - Adding the same product twice sums quantities (2 + 3 = 5), does not create duplicate rows
 - Removing a cart item returns it to an empty cart
-- 1 real test user, 1 category, 1 product, full cart lifecycle tested end-to-end
+- Checkout rejects empty cart (400 Bad Request)
+- Checkout correctly calculates total (2500000 x 2 = 5000000 Toman) and snapshots price/title
+- Checkout clears the cart atomically after creating the order
+- 1 real test user, 1 category, 1 product, full cart-to-order lifecycle tested end-to-end
