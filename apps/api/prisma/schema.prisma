@@ -14,6 +14,14 @@ enum Role {
   ADMIN
 }
 
+enum OrderStatus {
+  PENDING
+  PAID
+  SHIPPED
+  DELIVERED
+  CANCELLED
+}
+
 model User {
   id           String   @id @default(uuid())
   email        String   @unique
@@ -24,6 +32,7 @@ model User {
   updatedAt    DateTime @updatedAt
 
   cart         Cart?
+  orders       Order[]
 
   @@map("users")
 }
@@ -51,6 +60,7 @@ model Product {
   updatedAt   DateTime @updatedAt
 
   cartItems   CartItem[]
+  orderItems  OrderItem[]
 
   @@index([categoryId])
   @@map("products")
@@ -76,4 +86,31 @@ model CartItem {
 
   @@unique([cartId, productId])
   @@map("cart_items")
+}
+
+model Order {
+  id         String      @id @default(uuid())
+  userId     String
+  user       User        @relation(fields: [userId], references: [id])
+  status     OrderStatus @default(PENDING)
+  totalToman Int
+  items      OrderItem[]
+  createdAt  DateTime    @default(now())
+  updatedAt  DateTime    @updatedAt
+
+  @@index([userId])
+  @@map("orders")
+}
+
+model OrderItem {
+  id            String  @id @default(uuid())
+  orderId       String
+  order         Order   @relation(fields: [orderId], references: [id], onDelete: Cascade)
+  productId     String
+  product       Product @relation(fields: [productId], references: [id])
+  titleSnapshot String
+  priceSnapshot Int
+  quantity      Int
+
+  @@map("order_items")
 }
